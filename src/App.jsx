@@ -1085,5 +1085,21 @@ const App = () => {
   
   return <MainMenu />;
 };
+function Appp() {
+  return (
+    <div className="min-h-screen flex flex-col bg-black text-white">
+      {/* المحتوى الرئيسي */}
+      <main className="flex-grow">
+        {/* هنا مكونات أو صفحات المشروع */}
+      </main>
 
-export default App;
+      {/* العنصر اللي عايزه يظهر في كل الصفحات */}
+      <footer className="bg-cyan-950 text-center py-4 text-sm text-cyan-400 border-t border-cyan-700">
+        © {new Date().getFullYear()} Cyber Game by Hossam 🔐
+      </footer>
+    </div>
+  );
+}
+
+
+
