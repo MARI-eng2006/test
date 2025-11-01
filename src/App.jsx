@@ -64,7 +64,7 @@ const App = () => {
   const ModeSelectModal = () => (
     <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4">
       <div className="bg-black p-6 md:p-8 border-2 border-cyan-500 shadow-lg max-w-2xl w-full">
-        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono">// SELECT_GAME_MODE //</h2>
+        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono"> SELECT_GAME_MODE </h2>
         
         <div className="space-y-4">
           <button 
@@ -86,7 +86,7 @@ const App = () => {
 
         {gameMode === 'multiplayer' && (
           <div className="mt-6 p-4 border border-gray-700 rounded-lg bg-gray-900">
-            <h3 className="text-xl text-green-400 mb-4 text-center font-mono">// SELECT_PLAYER_COUNT //</h3>
+            <h3 className="text-xl text-green-400 mb-4 text-center font-mono"> SELECT_PLAYER_COUNT </h3>
             <div className="grid grid-cols-3 gap-3">
               {[2, 3, 4].map(count => (
                 <button 
@@ -116,7 +116,7 @@ const App = () => {
 
   const LevelSelectModal = () => (
     <div className="fixed inset-0 bg-black/95 flex items-center justify-center z-50 p-4">
-      <div className="bg-black p-6 md:p-8 border-2 border-cyan-500 shadow-lg max-w-2xl w-full relative">
+      <div className=" bg-black p-4 md:p-6 border-2 border-cyan-500 shadow-lg max-w-md w-full relative rounded-xl">
         <button 
           onClick={() => { setShowLevelSelect(false); setShowModeSelect(true); }} 
           className="absolute top-4 left-4 bg-cyan-500 hover:bg-cyan-400 text-black w-10 h-10 flex items-center justify-center text-xl font-bold rounded-full border-2 border-cyan-700 transition-all"
@@ -125,7 +125,7 @@ const App = () => {
           ←
         </button>
         
-        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono">// SELECT_DIFFICULTY //</h2>
+        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono"> SELECT_DIFFICULTY </h2>
         
         <div className="space-y-4">
           <button 
@@ -170,7 +170,7 @@ const App = () => {
           ×
         </button>
         
-        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono">// HOW_TO_PLAY.txt //</h2>
+        <h2 className="text-2xl md:text-3xl text-cyan-400 mb-6 text-center font-mono"> HOW_TO_PLAY.txt </h2>
         
         <div className="text-green-400 space-y-4 text-sm md:text-base">
           <div className="border-l-4 border-green-500 pl-4">
